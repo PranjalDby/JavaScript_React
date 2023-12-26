@@ -1,6 +1,6 @@
 *.log
-/React
-/simple_webApp
-/package-lock.json
-/package.json
-/node_modules
+React/
+simple_webApp/
+package-lock.json
+package.json
+node_modules/
