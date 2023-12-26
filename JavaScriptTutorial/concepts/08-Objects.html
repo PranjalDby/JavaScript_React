@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <P>objects</P>
+    <script>
+        //in javascript objects groups multiple value together
+        const product ={
+            name:"socks",//property
+            price:310,
+            ['delivery-time']:'1 day',
+        }
+        // product['name'] = 'CottonSocks'
+        // console.log(product)
+        // product.type = 'clothing'
+        // console.log(product)
+        // // deleting a property
+        // delete product.type
+        // console.log(product)
+        // we use object[] to access the properties that are not being accessed by object.property
+        // we can store any type object to object: like boolean,int,float,another object or functions(which is also called as methods)
+        console.log(product['delivery-time'])
+        const product2 = {
+            name:'Tshirt',
+            color:'Red',
+            rating:{
+                stars: 4.5,
+                count: 89
+            },
+            fun: function funs(){
+                console.log('function inside the object')
+            }
+        }
+        product2.fun()
+
+        // Built-in Objects
+        // JSON
+        // localstorage
+        ss = JSON.stringify(product2) // converts JS object into JSON string
+        console.log(typeof ss)
+        // parsing javascript object from JSON
+        parsed = JSON.parse(ss)
+        console.log(parsed)
+        // locastorage built-in objects : it is used to save the object into memory more permanently
+        // it has method setItem(key,value) which takes to arguments a key and value,Note: it only stores string values
+        
+        //Auto-boxing: javascript wraps any types into objects
+        console.log('Pranjal'.toUpperCase())
+        // Object are references
+        const obj2 = {
+            memory:334
+        }
+        const obj3 = obj2 // it makes a copy of reference where obj2 points in computer memory
+        obj2.memory = 'x22efgs'
+        console.log(obj2)
+        const obj4 = {
+            memory:'xfc3rred',
+            bufferSize: 223
+        }
+        console.log(obj2.memory === obj4.memory); // this will only compare references not the value
+        // some shortcuts to create objects
+
+        // const memory = obj4.memory
+        const {memory,bufferSize} = obj4; //destructuring -it works when a attribute has same name as variable name
+        console.log(memory,bufferSize)
+        // shorthand property
+        const obj5 = {
+            memory,
+            call(){
+                console.log('Hello Memory')
+            }
+        }
+        console.log(obj5)
+        obj5.call()
+    </script>
+</body>
+</html>

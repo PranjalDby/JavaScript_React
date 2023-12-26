@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM PROJECT</title>
+  </head>
+  <link rel="stylesheet" href="dom.css">
+  <body>
+    <p>Please Click The Subscribe!!</p>
+    <button onclick="jsSubs(event)" id="js-but1" type="button">Subscribe 😊</button>
+    <div class="amazoncalc">
+      <p>Amazon Shipping Calculator</p>
+      <p>Orders Under $40 = +10$ Shipping Charges</p>
+      <p>Order Above $40 Will have Free - Shipping</p>
+      <br>
+      <input name="Order" type="number" class="js-input" placeholder="Cost of Order" onkeydown="
+        if(event.key === 'Enter'){
+          calculateShipping(event)
+        }
+      " min="0">
+      <button
+        type="button"
+        class="js-calc"
+        onclick="
+       //.value to get the value from textbox
+        calculateShipping();
+      "
+      >
+        Calculate
+      </button>
+      <p id="js-result"></p>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+      function jsSubs(event) {
+        const jsSubs = document.querySelector("#js-but1");
+        // Here innerHTML property is senstive to spaces or any small changes in our button html
+        // so instead of we use innerText
+        if (jsSubs.innerText === "Subscribe 😊") {
+          jsSubs.innerText = "Subscribed ❤️";
+          //to change the html first way to add class and the properties to it.
+          event.target.style.backgroundColor = 'salmon' // it passes the order or instruction to listenert which is onclick() on button
+        } else {
+          jsSubs.innerText = "Subscribe 😊";
+          event.target.style.backgroundColor = 'black'
+        }
+      }
+      function calculateShipping(event){
+        const elementInput = document.querySelector('.js-input');
+        const cost = elementInput.value;
+        let price = Number(cost)
+        const elementResult = document.getElementById('js-result');
+        elementResult.style.color = 'violet'
+        if(price >0 && price < 40){
+          price = price + 10;
+          price = price.toFixed(2)
+          document.querySelector('#js-result').innerHTML = `Total Cost = $${price}`;
+        }
+        else if(price > 40){
+          document.querySelector('#js-result').innerHTML = `Total Cost = $${price}`;
+        }
+        else{
+          document.querySelector('#js-result').innerHTML = 'Price Must be gratear than 0'
+          elementResult.style.color = 'red'
+        }
+      }
+      // window(object) represent the entire browser
+      window.console.log('Hello')
+    </script>
+  </body>
+</html>

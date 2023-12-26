@@ -1,0 +1,51 @@
+.added-todo-info{
+    margin-top: 130px;
+}
+.form-control{
+    height: fit-content;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.input-todo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left:8px;
+    padding-right:6px;
+}
+#js-show-info{
+    display:grid;
+    margin-top: 50px;
+    padding: 8px 20px;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* justify-items: left;
+    justify-content: space-between; */
+    align-items: center;
+    grid-template-columns: 189px 166px 190px;
+}
+.js-input{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: last baseline;
+    margin-left:1px;
+}
+
+.js-el-date{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left:3px;
+}
+.btn-delete{
+    margin-top:10px;
+    margin-left: 50px;
+}
+.name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-style: italic;
+}
+.date{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    font-style: italic;
+}

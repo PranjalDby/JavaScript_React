@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <button type="button">First</button>
+    <button type="button" class="js-second">Second</button>
+    <script>
+      //DOM represents the structure of webpage or link to webpage
+      /*
+        document.body.innerHTML = 'Hello There'; // built-in object provided by javascript
+        document.title = "Good Job! You reached to DOM";
+        */
+      //    console.log(typeof document.body) returns object
+
+      //   document.body.innerHTML = "<button type='button'>Hi Jello</button>"; //javascript can modify the html inside the body
+      // method is function saved inside the object
+      // document.querySelector() let us get any element from the page and put it inside the Javascript
+
+      console.log(document.querySelector("button").innerHTML); // give us the html inside the button
+      //   if we have more than one button it will only change the html of first button
+      document.querySelector("button").innerHTML = "Click Please"; // change the button name
+      const htmlButtonElemn = document.querySelector('.js-second'); //important here is to always use id and class classifier
+      htmlButtonElemn.innerHTML = 'Hello'
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#js-but1{
+    border:40px;
+    border-radius:20px;
+    background-color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:white;
+    padding-top: 10px;
+    padding-left:15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    animation-name:screen;
+    cursor:pointer;
+}
+body{
+    font: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.js-input{
+    font-size: 15px;
+    padding:10px;
+}
+.js-calc{
+    padding: 12px 30px;
+    font-size: 15px;
+    background-color:rgb(9, 228, 49);
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.is-subscribed{
+    background-color: white;
+}
+.amazoncalc{
+    margin-top: 150px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+</head>
+<script src="main.js"></script>
+<body
+    <div class="cart-body">
+
+        <button type="button" title="Show Quantity" id="ShowQuantity" onclick="
+            console.log(`current cart Quantity = ${cartQntity}`)
+            ">Show Quantity
+        </button>
+
+        <button type="button" title="Add to cart"" id="Add_cart" onclick="
+        cartQntity += 1
+        console.log(`Added to Cart = ${cartQntity}`)
+        ">Add to Cart
+        </button>
+
+        <button type="button" title="Add 2" id="add_2" onclick="
+        cartQntity += 2
+        console.log(`Added Quantity +2, cart Quantity = ${cartQntity}`)
+        ">+2
+        </button>
+
+        <button type="button" title="Add 3" id="add_3"
+        onclick = "
+        cartQntity += 3
+        console.log(`Added Quantity +3 cart Quantity = ${cartQntity}`)
+        "
+        >+3</button>
+
+
+        <button type="button" title="reset" id="reset"
+        onclick="
+        alert(`Do you want to reset Cart`)
+        cartQntity = 0
+        console.log(`cart Quantity = ${cartQntity}`)
+        ">reset
+        </button>
+
+
+    </div>
+</body>
+</html>

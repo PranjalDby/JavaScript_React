@@ -1,0 +1,69 @@
+ // let arr = [10,20,40]; //dynamic array
+      // arr[3] = 33;
+      // //we can stored elements of different type in an array,arrays are value
+      // arr[4] = 'Socks';
+      // arr[5] = {name:'Pranjal',id:1024}
+      // // array is an object
+      // // let elementShow = document.querySelector('#show_array');
+      // // some arrays properties
+      // /**
+      //  * array.length
+      //  * array.push:push an item to the end of array
+      //  * array.splice():-it removes an item from array
+      //  */
+      // console.log(arr.length)
+      // console.log(arr.push('Pranjal'))
+// console.log(arr.splice(4,2))
+
+//------------------------------24.12.2023
+
+//Accumulator Pattern
+/**
+ * create the variable to store the result.
+ * Loop through the array and update the result.  b
+ */
+
+// adding the items together in array
+// const items = [
+//     10,20,30,50
+// ]
+// let sum = 0
+// let res = items.map((items) => {
+//     sum = sum + items
+//     return sum
+// })
+// // console.log(sum)
+// // items doubled
+// items[1] = 40
+// res = items.map((i) => {
+//     return i * 2
+// });
+// console.log(res)
+//Loop
+// let i = 1;
+// while (i != 10) {
+//     console.log(i)
+//     i += 1;
+// }
+// // FOR LOOP
+// for (let i = 0; i < 10; i++){
+//     console.log('For Looop' + i);
+// }
+// // random number generator
+
+// let randmon = 0
+
+// while (randmon < 0.5) {
+//     randmon = Math.random()
+// }
+// console.log(randmon)
+// const todoLis = [
+//      'make dinner',
+//      'watch youtube',
+//      'wash dishes',
+//      'wash basins'
+// ]
+
+// for (const item in todoLis) {
+//      console.log(todoLis[item])
+// }
