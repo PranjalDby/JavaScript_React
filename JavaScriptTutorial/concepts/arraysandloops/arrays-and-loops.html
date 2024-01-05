@@ -16,22 +16,15 @@
         <input
           type="text"
           placeholder="Todo Name"
-          class="js-input form-control"
-          onkeydown="
-            if(event.key === 'Enter'){
-                addTodo(event)
-            }
-            "
-        />
-         <div><input type="date" class="js-el-date form-control" title="Date"></div>
+          class="js-input form-control"/>
+
+         <div>
+          <input type="date" class="js-el-date form-control" title="Date">
+        </div>
         <button
-        class="btn btn-primary"
+          class="btn btn-primary"
           type="button"
-          style="margin-left: 4px; cursor: pointer"
-          onclick="
-            addTodo();
-        "
-        >
+          style="margin-left: 4px; cursor: pointer">
           Add
         </button>
       </div>

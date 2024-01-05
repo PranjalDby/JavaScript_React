@@ -6,7 +6,7 @@
 }
 .reset-button{
     padding-left: 10px 5px;
-    margin-left: 30px;
+    margin-left: 28px;
     cursor: pointer;
 }
 ._main{
@@ -61,6 +61,9 @@ p{
     border-radius: 50px;
     border: 40px;
     border-color: antiquewhite;
+}
+.auto-play-btn{
+    cursor: pointer;
 }
 body{
     background-color:rgb(25,25,25);
