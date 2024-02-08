@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger</title>
+</head>
+<body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <p id="paragraph">
+        Unary operators:
+    </p>
+    <div id="number">
+        <p id="counter-result">Counter Will print Here </p>
+        <button type="button" title="Start" id="js-start"> START</button>
+    </div>
+     <script>
+        let flag = false
+        let count_value = 0;
+        let intervalid = 0;
+        const counter_id = document.querySelector('#counter-result')
+        counter_id.setAttribute('color','red')
+        const startBut = document.querySelector('#js-start')
+        startBut.addEventListener('click',()=>{
+            setIntervalCounter()
+        })
+        const paragraphId = document.querySelector('#paragraph')
+        paragraphId.innerHTML = `The Minus Operator can be used both as unary operator as well as binary operator <br> ex: Value of -(10-2)\n<br>
+        ${-(10-2)}\n<br>Boolean Types:true and false:\n<br>
+        Compairing Pranjal is greater Than Aryan:\n<br>
+        ${"Pranjal" > "Aryan"}`
+        function setIntervalCounter(){
+            if(!flag){
+                intervalId = setInterval(()=>{
+                    count_value += 1
+                    counter_id.innerHTML = `Count Value = ${count_value}`
+                },1000)
+                flag = true
+            }
+            else{
+                flag = false
+                console.log('cleared')
+                clearInterval(intervalId)
+            }
+        }
+        console.log(true && true)
+        // Ternary operator
+        console.log('Ternary operator....')
+        console.log('Pranjal' > 'Aryan' ? 'Pranjal is King.' : "Aryan is GOD.")
+        console.log('TYPE COERCION:....\n')
+        console.log('5'- 1) // ans = 4
+        console.log('8'- null) // ans = 8,null converted to zero
+        console.log('5' + 1) // 51
+        console.log('Hello' * 2) // NaN
+
+        console.log('Difference B/w == and ===')
+        console.log("" == false) // if we need type coercion to happen we doing some operation then we use == or != to compare
+        // But if we want to test wether something refers to the precise value. ? expression like 0 == false and "" == false are also true, becuase of type coercion.
+        // if we don't want any type coercion  to happen, then there are two additional operators: === and !==. (For Precise Comparison)
+        console.log('short-circuiting of logical operators')
+        console.log(null || 'Users')
+        // logical and &&
+        console.log('Pranjal dubey' && 'Pranjal')
+    </script>
+    <br>
+
+</body>
+</html>

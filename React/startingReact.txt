@@ -1,3 +1,0 @@
-In react we handle our javascript operations with the help of component.
-
-1.Component: A component in react help us write reusable,modular,and better organized code.
