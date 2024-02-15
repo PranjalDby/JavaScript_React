@@ -142,48 +142,47 @@ const objs = {
 
 // For Loops
 
-let mul = 13
+let mul = 13;
 for (let i = 0; i < 11; i++){
 
-    console.log(`${mul} * ${i} = ${mul * i}`)
+    console.log(`${mul} * ${i} = ${mul * i}`);
 }
 
 let sum = 0
 for (let i = 1; i <= 10; i++){
-    sum = sum + i
-    console.log(i)
+    sum = sum + i;
+    console.log(i);
 }
-console.log(sum)
+console.log(sum);
 
-let lst = ['Markus', 'Emily', 'Jacob', 'Lucifer', 'Samael']
+let lst = ['Markus', 'Emily', 'Jacob', 'Lucifer', 'Samael'];
 
 // for-in loop
 for (let n in lst) {
-    
-    console.log(lst[n])
+    console.log(lst[n]);
 }
 
 // for-of loop
-console.log('Using for-of loop')
+console.log('Using for-of loop');
 for (const iterator of lst) {
-    console.log(iterator)
+    console.log(iterator);
 }
 
 // Functions
 
 function onePlusAvg(x, y) {
-    let avg = 1 + (x+y)/2
-    return Math.round(avg)
+    let avg = 1 + (x+y)/2;
+    return Math.round(avg);
 }
 
 
-console.log(onePlusAvg(10, 20))
+console.log(onePlusAvg(10, 20));
 
 // Arrow functions
 
 const onePlusAvgArrow = (x, y) => {
-    let avg = 1 + (x + y) / 2
-    return avg
+    let avg = 1 + (x + y) / 2;
+    return avg;
 } 
 
 console.log(onePlusAvgArrow(30,20))
@@ -195,14 +194,16 @@ let marks = {
     shubham: 9,
     lovish: 56,
     monika: 4
-}
+};
+
+
 for (let m in marks) {
-    console.log("Marks of " +  m + "= " + marks[m])
+    console.log("Marks of " +  m + "= " + marks[m]);
 }
 console.log('Other Ways')
 
 for (let i = 0; i < Object.keys(marks).length; i++){
-    console.log("Marks of " + Object.keys(marks)[i] + "= " + marks[Object.keys(marks)[i]])
+    console.log("Marks of " + Object.keys(marks)[i] + "= " + marks[Object.keys(marks)[i]]);
 }
 
 
